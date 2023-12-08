@@ -57,23 +57,23 @@
         */
 
         const paragraph = document.querySelector('#first');
-paragraph.style.border = '2px solid red';
+        paragraph.style.border = '2px solid red';
 
-const radioButtons = document.querySelectorAll('input[name="answer"]');
-for (const button of radioButtons) {
-  button.checked = !button.checked;
-}
+        const radioButtons = document.querySelectorAll('input[name="answer"]');
+        for (const button of radioButtons) {
+            button.checked = !button.checked;
+        }
 
-const listItems = document.querySelectorAll('li');
-for (const item of listItems) {
-  item.style.margin = '2px';
-  item.style.border = '2px solid green';
-}
+        const listItems = document.querySelectorAll('li');
+        for (const item of listItems) {
+            item.style.margin = '2px';
+            item.style.border = '2px solid green';
+        }
 
-const lists = document.querySelectorAll('.my-list');
-for (const list of lists) {
-  list.style.border = '2px solid blue';
-}
+        const lists = document.querySelectorAll('.my-list');
+        for (const list of lists) {
+            list.style.border = '2px solid blue';
+        }
 
     </script>
 </body>
