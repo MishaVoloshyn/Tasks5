@@ -30,12 +30,16 @@
     Используя функцию getRandomColor добавьте для каждого параграфа рамку случайного цвета
     */
     function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+        return `#${r}${g}${b}`;
+    }
+
+    const paragraphs = document.querySelectorAll('p');
+
+    for (const paragraph of paragraphs) {
+        paragraph.style.border = `1px solid ${getRandomColor()}`;
     }
 </script>
 
